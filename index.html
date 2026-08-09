@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://tse1.mm.bing.net/th/id/OIP.27o_HtsijwJXPvDfi6bdzQHaG8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" type="image/png">
+</head>
+<body>
+    <div class="topbar">
+        <div class="left">
+         <img src="https://emc2.batstate-u.edu.ph/human-resource/assets/img/bsu-neu-logo.png" alt="BSU Logo">
+         <h1>Batangas State University</h1>
+        </div>
+        <div class="right">
+            <h1 class="datetime">Date and Time (N/A)</h1>
+        </div>
+    </div>
+
+    <div class="topbar2">
+        <div class="left">
+            <button onclick="changepass()" class="bar2btn">🔑Change Password</button>
+        </div>
+        <div class="right">
+            <button onclick="signout()" class="bar2btn">⏻Sign-out</button>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="whitebg">
+            <div class="left">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.yYUwl3GDU07Q5J5ttyW9fQHaHa?r=0&w=1030&h=1030&rs=1&pid=ImgDetMain&o=7&rm=3" alt="profile pic">
+                <h1>Comendador, Mark Daniel C.<p>✉🖊</p></h1>
+            </div>
+            <div class="right">
+                <h4>▶︎FIRST SEMESTER AY 2026-2027</h4>
+                <h4>▶︎College of Informatics and Computing Sciences - Alangilan Campus</h4>
+                <h4>▶︎BS Information Technology - FIRST YEAR</h4>
+                <h4 class="green">▶︎ENROLLED</h4>
+                <h4>▶︎IT-1109</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="UniMVCVS">
+        <div class="UniMVCV">
+            <button onclick="showMVCV()" class="UniMVCVbtn">University Mission, Vision and Core Values ▼</button>
+            <div id="content" class="hidden">
+                <img src="MVCV.png" alt="Example" width="200" class="MVCV">
+            </div>
+
+            <a href="https://batstateu.edu.ph/university-hymn/">
+                <button onclick="goHymn()" class="UniMVCVbtn">University Hymn</button>
+            </a>
+            
+            <a href="https://dione.batstate-u.edu.ph/downloads/files/BatStateU%20Citizen's%20Charter%202025-01%20(Final).pdf">
+                <button onclick="showRF()" class="UniMVCVbtn">Read First</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="AdvandSAS">
+        <div class="Advisory">
+            <div class="margin">
+                <h3 class="red">⚠️ Advisory</h3>
+                <p>Red Spartan students, please be informed that the <b>official email accounts</b> that are being used by the BatStateU academic community are those that are under the domain <b>@g.batstate-u.edu.ph</b> More so, <b>do not share</b> the account passwords of your student portal and G suite email account. Stay safe Red Spartans!
+                </p>
+            </div>
+        </div>
+        <div class="SAS">
+            <div class="margin">
+                <h3 class="">Office of Student Affairs Services</h3>
+                <a href="https://dione.batstate-u.edu.ph/downloads/osas/Res_No._33_S_2021-Policy_for_Shifters_and_Transferees.pdf" class="grey">
+                    <button class="UniMVCVbtn">📘Policies on Shifters and Transferees</button>
+                </a> <br>
+                <a href="https://dione.batstate-u.edu.ph/downloads/osas/OSAS-continuity-plan-21-22.pdf" class="grey">
+                    <button class="UniMVCVbtn">📘Student Affairs Services (SAS) Continuity Plan AY 2021-2022</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="conFourText">
+        <div class="fourText">
+            <button onclick="prevText()"><</button>
+                <p id="displayText">🎥Orientation for New Red Spartan Students🆕</p>
+            <button onclick="nextText()">></button>
+        </div>
+    </div>
+
+    <div class="conFiveImg">
+        <div class="fiveImg">
+            <button onclick="prevImage()"><</button>
+            <img id="slider" src="1.png" width="200" alt="">
+            <button onclick="nextImage()">></button>
+        </div>
+    </div>
+
+    <main>
+        <div class="sixBTN">
+            <button onclick="showHome()">🏠︎Home</button>
+            <div id="home" class="hidden">
+                <h1>Enrollment - FIRST SEMESTER AY 2026-2027</h1>
+                <p>ⓘ Click "Filter Option.." button to change the default schoolyear / semester</p>
+
+                <button class="greybtn">Filter Option..</button>
+            </div>
+
+
+
+
+            <button onclick="showNews()">News</button>
+            <div id="news" class="hidden">
+                <p>News feed from <a href="https://batstateu.edu.ph/">batstate-u.edu.ph</a></p>
+                <h3>Batangas State University, Aboitiz Economic Estates strengthen industry-academe collaboration through Industry Advisory Council</h3>
+            </div>
+
+
+
+
+
+
+            <button onclick="showAdvisories()">Advisories</button>
+            <div id="advisories" class="hidden">
+                <div class="borImg">
+                    <a href="https://batstateu.edu.ph/advisory-on-payment-options-and-procedures/" target="_blank"  rel="noopener noreferrer">
+                        <img src="advisory1.png" alt="Advisory">
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+            <button onclick="showSchedules()">Schedules</button>
+            <div id="schedule" class="hidden">
+                <button class="schePrint">🖨️Print</button>
+
+                <div class="stuSchedule">
+                    <table class="tabwidth" border="1">
+                        <tr>
+                            <th rowspan="2">Time</th>
+                            <th colspan="2">Mon</th>
+                            <th colspan="2">Tue</th>
+                            <th colspan="2">Wed</th>
+                            <th colspan="2">Thu</th>
+                            <th colspan="2">Fri</th>
+                            <th colspan="2">Sat</th>
+                            <th colspan="2">Sun</th>
+                        </tr>
+
+                        <tr>
+                            <th>Subj</th><th>Room</th>
+                            <th>Subj</th><th>Room</th>
+                            <th>Subj</th><th>Room</th>
+                            <th>Subj</th><th>Room</th>
+                            <th>Subj</th><th>Room</th>
+                            <th>Subj</th><th>Room</th>
+                            <th>Subj</th><th>Room</th>
+                        </tr>
+                        <tr>
+                            <th>07:00 AM-07:30 AM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>07:30 AM-08:00 AM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>08:00 AM-08:30 AM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>08:30 AM-09:00 AM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>09:00 AM-09:30 AM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>09:30 AM-10:00 AM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>10:00 AM-10:30 AM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>10:30 AM-11:00 AM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>11:00 AM-11:30 AM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>11:30 AM-12:00 PM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>12:00 PM-12:30 PM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>12:30 PM-01:00 PM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>01:00 PM-01:30 PM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>01:30 PM-02:00 PM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>02:00 PM-02:30 PM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>02:30 PM-03:00 PM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>03:00 PM-03:30 PM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>03:30 PM-04:00 PM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>04:00 PM-04:30 PM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>04:30 PM-05:00 PM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>05:00 PM-05:30 PM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>05:30 PM-06:00 PM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>06:00 PM-06:30 PM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                        <tr>
+                            <th>06:30 PM-07:00 PM</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th><th>____</th>
+                            <th>____</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+
+
+
+            <button>Downloads</button>
+            <button>...</button>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+body{
+  background-color: #EEEEEE;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TopBar */
+
+.topbar{
+  background-color: #343A40;
+  padding: 20px;
+  width: 100%;
+  max-width: 935px;
+  gap: 15px;
+  display: flex;
+}
+.left{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+}
+.topbar img{
+  height: 30px;
+}
+.topbar h1 {
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 15px;
+}
+
+.datetime{
+  margin-left: auto;
+  color: white;
+}
+
+.topbar2{
+  background-color: #F8F9FA;
+  padding: 20px;
+  width: 100%;
+  max-width: 935px;
+  gap: 15px;
+  display: flex;
+}
+.bar2btn{
+  padding: 10px 25px;
+  border: none;
+  border-radius: 50px;
+  background-color: #F8F9FA;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+.bar2btn:hover{
+  background-color: #e0e0e0;
+}
+
+.profile{
+  background-color: #F8F9FA;
+  padding: 20px;
+  width: 100%;
+  height: 170px;
+  max-width: 935px;
+  gap: 15px;
+  display: flex;
+  
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("https://media.licdn.com/dms/image/v2/D5622AQELkz3UkjzvGw/feedshare-shrink_800/feedshare-shrink_800/0/1685664759913?e=2147483647&v=beta&t=DF_yGPPirBNKQDSpFT1cTGm24XV8hZU_FjBvpZHNxiY");
+}
+.profile img{
+  height: 150px;
+}
+.profile h1, h4{
+  color: black;
+  text-shadow: 2px 2px 5px white;
+  margin: 0;
+}
+.profile .left{
+  gap: 15px;
+}
+.profile .right{
+  color: white;
+  text-shadow: 2px 2px 5px black;
+
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: start;
+  text-align:left;
+  margin: 0;
+}
+
+.whitebg{
+  background-color: rgb(253, 253, 253, 0.8);
+  padding: 20px;
+  width: 100%;
+  height: 130px;
+  max-width: 935px;
+  gap: 15px;
+  display: flex;
+}
+.whitebg p{
+  font-size: 15px;
+}
+
+.green{
+  color:green;
+}
+
+.UniMVCVS{
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  height: 20px;
+  max-width: 935px;
+  gap: 15px;
+  display: flex;
+}
+.UniMVCV{
+  position: relative; 
+}
+.UniMVCVbtn{
+  padding: 0px 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+#content {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  z-index: 10;
+}
+.MVCV{
+  width: 900px;
+  height: auto;
+}
+
+
+.AdvandSAS{
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  height: 160px;
+  max-width: 935px;
+  gap: 15px;
+  display: flex;
+}
+.Advisory{
+  width: 450px;
+  height: 150px;
+  border: 1px solid;
+  border-color: rgba(255, 166, 0, 0.418);
+  box-shadow: 0 0 2px rgba(255, 255, 0, 0.384);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.SAS{
+  width: 460px;
+  height: 150px;
+  border: 1px solid;
+  border-color: rgba(128, 128, 128, 0.16);
+}
+.red{
+  color:red;
+}
+.margin{
+  margin-left: 10px;
+}
+.grey{
+  color: grey;
+}
+
+
+.conFourText{
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  height: 100px;
+  max-width: 935px;
+  gap: 15px;
+  display: flex;
+}
+.fourText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;                 
+}
+#displayText {
+  text-align: center;
+  min-width: 730px;
+  font-size: 25px;
+}
+.fourText button{
+  padding: 10px 25px;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.conFiveImg{
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjU7bhokq2Ng8or8QYE-TJ6SAfJ2MV3igWQ_sBye4f0BaRppWo0N17Anx14RVesn9Z0-K-w0BcYmjEjC6tw1wzyBVU5o7ahVGV8VEsNxvn-1RPMhTfvqKLde7rgiSZBVFC4v-58Ad4IaCR4j_PZuoy4TuN5izMntzGmeuYDo6JusIcCcxxfY8En2fYcVw/s1366/download%20(14).jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 20px;
+  width: 100%;
+  height: 200px;
+  max-width: 935px;
+  gap: 15px;
+  display: flex;
+}
+.fiveImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;                 
+}
+.fiveImg button{
+  padding: 10px 25px;
+  border: none;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+.fiveImg img{
+  height: 190px;
+  width: 100%;
+  object-fit: contain;
+}
+#slider {
+  text-align: center;
+  min-width: 730px;
+}
+.fiveImg img:hover{
+  transform: scale(1.2);
+}
+
+main{
+  background-color: white;
+  padding: 20px;
+  width: 100%;
+  height: 1000px;
+  max-width: 935px;
+  gap: 15px;
+  display: flex;
+}
+
+.sixBTN{
+  position: relative;
+}
+.sixBTN button{
+  padding: 10px 25px;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+}
+#home{
+  position: absolute;
+}
+#home h1{
+  color: red;
+  font-size: 20px;
+}
+#home p{
+  color: gray;
+  margin-left: 10px;
+}
+
+#home .greybtn{
+  margin-left: 10px;
+  padding: 10px 25px;
+  border: 1px solid;
+  border-color: gainsboro;
+  border-radius: 50px;
+  background-color: rgba(128, 128, 128, 0.039);
+  color: rgb(105, 105, 105);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#news{
+  position: absolute;
+}
+#news h3{
+  text-align: justify;
+  color: black;
+  font-size: 20px;
+}
+
+#advisories{
+  position: absolute;
+}
+#advisories h3{
+  text-align: justify;
+  color: black;
+  font-size: 20px;
+}
+
+.borImg{
+  border: 1px solid;
+  border-color: rgba(255, 166, 0, 0.418);
+  background-color: rgba(162, 161, 161, 0.064);
+  width: 900px;
+  height: 200px;
+}
+.borImg img{
+  margin-top: 10px;
+  height: 180px;
+  width: 100%;
+  object-fit: contain;
+}
+
+#schedule{
+  position: absolute;
+}
+#schedule .schePrint{
+  padding: 10px 25px;
+  border: 1px solid;
+  border-radius: 50px;
+  border-color: gainsboro;
+  background-color: rgba(128, 128, 128, 0.039);
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.stuSchedule {
+  width: 930px;
+  max-height: 300px;  /* adjust height */
+  overflow-y: auto;   /* vertical scroll */
+  border: 1px solid #ccc;
+}
+.tabwidth{
+  width: 900px;
+}
