@@ -90,3 +90,7 @@ function showSchedules() {
     content.style.display = "block";
   }
 }
+
+function IDK(){
+  alert("Idk how to make this yet(W.I.P.)")
+}
