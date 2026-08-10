@@ -271,7 +271,7 @@ main{
   background-color: white;
   padding: 20px;
   width: 100%;
-  height: 2000px;
+  height: 1240px;
   max-width: 935px;
   gap: 15px;
   display: flex;
@@ -426,4 +426,59 @@ main{
 }
 .tabwidth{
   width: 900px;
+}
+
+
+
+
+
+
+footer{
+  background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("https://sustainability.batstate-u.edu.ph/wp-content/uploads/2025/02/alangilan-2-1024x683.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  width: 100%;
+  height: 1150px;
+  max-width: 935px;
+  gap: 15px;
+  display: flex;
+}
+.footContact{
+  border-right: 1px solid;
+  border-color: grey;
+}
+.footContact table{
+  width: 365px;
+  height: auto;
+}
+.footContact .grey{
+  font-size: 21px;
+}
+
+.footImg img{
+  width: auto;
+  max-width: 500px;
+  height: 100px;
+  background-size: contain;
+}
+.footImg .BFImg{
+  height: 200px;
+}
+
+.CnR{
+  background-color: rgb(129, 0, 0);
+  padding: 20px;
+  width: 100%;
+  height: 18px;
+  max-width: 935px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.CnR h1{
+  font-size: 15px;
+  color: white;
 }
