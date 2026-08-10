@@ -91,6 +91,16 @@ function showSchedules() {
   }
 }
 
+function showDownloads() {
+  const content = document.getElementById("downloads");
+
+  if (content.style.display === "block") {
+    content.style.display = "none";
+  } else {
+    content.style.display = "block";
+  }
+}
+
 function IDK(){
   alert("Idk how to make this yet(W.I.P.)")
 }

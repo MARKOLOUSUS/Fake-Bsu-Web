@@ -8,8 +8,6 @@ body{
   align-items: center;
 }
 
-/* TopBar */
-
 .topbar{
   background-color: #343A40;
   padding: 20px;
@@ -289,6 +287,8 @@ main{
   font-size: 16px;
   cursor: pointer;
 }
+
+
 #home{
   position: absolute;
 }
@@ -368,10 +368,6 @@ main{
 }
 
 
-
-
-
-
 #news{
   position: absolute;
 }
@@ -404,6 +400,14 @@ main{
   object-fit: contain;
 }
 
+.mnm{
+  margin-top: 10px;
+  height: 180px;
+  width: 100%;
+  object-fit: contain;
+}
+
+
 #schedule{
   position: absolute;
 }
@@ -427,6 +431,67 @@ main{
 .tabwidth{
   width: 900px;
 }
+
+#downloads h2{
+  margin-left: 20px;
+}
+
+.GD{
+  margin-top: -30px;
+  height: 80px;
+  width: 900px;
+  border: 1px solid;
+  border-color: #ccc;
+  display: flex;
+  flex-direction: column;
+}
+.GD a{
+  margin-left: 20px;
+}
+
+.OSDD{
+  margin-top: -30px;
+  height: 130px;
+  width: 900px;
+  border: 1px solid;
+  border-color: #ccc;
+  display: flex;
+  flex-direction: column;
+}
+.OSDD a{
+  margin-left: 20px;
+}
+
+.GCD{
+  margin-top: -30px;
+  height: 200px;
+  width: 900px;
+  border: 1px solid;
+  border-color: #ccc;
+  display: flex;
+  flex-direction: column;
+}
+.GCD a{
+  margin-left: 20px;
+}
+
+.OJTD{
+  margin-top: -30px;
+  height: 350px;
+  width: 900px;
+  border: 1px solid;
+  border-color: #ccc;
+  display: flex;
+  flex-direction: column;
+}
+.OJTD a{
+  margin-left: 20px;
+}
+
+
+
+
+
 
 
 
